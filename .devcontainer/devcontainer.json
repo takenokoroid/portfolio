@@ -11,7 +11,8 @@
 				"GitHub.copilot",
 				"mhutchie.git-graph",
 				"svelte.svelte-vscode",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"GitHub.vscode-pull-request-github"
 			]
 		}
 	}
