@@ -55,7 +55,7 @@
 		"vitest": "^0.32.4"
 	},
 	"lint-staged": {
-		"*.{js,ts,svelte,css,scss,json}": [
+		"*.{js,ts,svelte}": [
 			"pnpm run format",
 			"pnpm run lint"
 		]
