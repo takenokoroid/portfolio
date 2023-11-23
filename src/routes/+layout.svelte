@@ -1,6 +1,7 @@
 <script>
 	import { base } from '$app/paths';
-	console.log('base:', base);
+
+	// 各種ページのパス
 	const index = base + '/';
 	const about = base + '/about';
 	const contact = base + '/contact';
@@ -16,7 +17,6 @@
 	</ul>
 </header>
 <main>
-	base:{base}
 	<slot />
 </main>
 
