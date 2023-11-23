@@ -4,7 +4,7 @@
 
 <header>
 	<h1>
-		<a href="/">たけろいど</a>
+		<a href="{base}/">たけろいど</a>
 	</h1>
 	<ul>
 		<li><a href="{base}/about">ABOUT</a></li>
