@@ -13,6 +13,7 @@
 	</ul>
 </header>
 <main>
+	base:{base}
 	<slot />
 </main>
 
