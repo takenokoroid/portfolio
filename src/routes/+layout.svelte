@@ -1,15 +1,18 @@
 <script>
 	import { base } from '$app/paths';
 	console.log('base:', base);
+	const index = base + '/';
+	const about = base + '/about';
+	const contact = base + '/contact';
 </script>
 
 <header>
 	<h1>
-		<a href="{base}/">たけろいど</a>
+		<a href={index}>たけろいど</a>
 	</h1>
 	<ul>
-		<li><a href="{base}/about">ABOUT</a></li>
-		<li><a href="{base}/contact">CONTACT</a></li>
+		<li><a href={about}>ABOUT</a></li>
+		<li><a href={contact}>CONTACT</a></li>
 	</ul>
 </header>
 <main>
