@@ -54,7 +54,7 @@
 		"jsdom": "^22.1.0"
 	},
 	"lint-staged": {
-		"*.{js,ts,svelte,css,scss,md,json}": [
+		"*.{js,ts,svelte,css,scss,json}": [
 			"pnpm run format",
 			"pnpm run lint"
 		]
