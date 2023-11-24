@@ -1,6 +1,6 @@
-<h2>ABOUT</h2>
+<h2>CONTACT</h2>
 
 <ul>
-	<li>Github</li>
-	<li>X</li>
+	<li><a href="https://github.com/takenokoroid">Github</a></li>
+	<li><a href="https://twitter.com/takenokoroid">X</a></li>
 </ul>
