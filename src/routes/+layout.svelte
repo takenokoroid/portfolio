@@ -19,6 +19,9 @@
 <main>
 	<slot />
 </main>
+<footer>
+	<p>&copy; 2021-2023 takenokoroid</p>
+</footer>
 
 <style>
 	header {
