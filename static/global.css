@@ -1,0 +1,12 @@
+/* Google Fontsからフォントをインポートする例 */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP&display=swap');
+
+/* 見出しのフォント指定 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BIZ+UDPGothic', sans-serif;
+}
+
+/* 文章のフォント指定 */
+p {
+  font-family: 'Noto+Serif+JP', serif;
+}

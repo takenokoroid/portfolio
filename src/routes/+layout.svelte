@@ -19,9 +19,6 @@
 <main>
 	<slot />
 </main>
-<footer>
-	<p>&copy; 2021-2023 takenokoroid</p>
-</footer>
 
 <style>
 	header {
@@ -29,6 +26,11 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem;
+		position: fixed; /* ヘッダーを固定 */
+		top: 0; /* 上端から0の位置に */
+		left: 0; /* 左端から0の位置に */
+		width: 100%; /* 幅を100%に設定して画面全体に広げる */
+		z-index: 1000; /* 他の要素より上に表示する */
 	}
 	ul {
 		display: flex;
@@ -36,5 +38,21 @@
 	}
 	li {
 		margin-left: 1rem;
+	}
+	main {
+		padding-left: 13rem; /* 左の余白 */
+		padding-right: 13rem; /* 右の余白 */
+		padding-top: 12rem;
+		padding-bottom: 3rem;
+		max-width: 1200px; /* コンテナの最大幅 */
+		margin-left: auto; /* 左右中央寄せ */
+		margin-right: auto; /* 左右中央寄せ */
+	}
+
+	@media (max-width: 768px) {
+		main {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 	}
 </style>
