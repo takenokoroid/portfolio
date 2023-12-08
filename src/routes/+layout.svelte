@@ -32,12 +32,20 @@
 		width: 100%; /* 幅を100%に設定して画面全体に広げる */
 		z-index: 1000; /* 他の要素より上に表示する */
 	}
+	h1 {
+		font-size: x-large;
+	}
 	ul {
 		display: flex;
 		list-style: none;
 	}
 	li {
 		margin-left: 1rem;
+		font-size: medium;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
 	}
 	main {
 		padding-left: 13rem; /* 左の余白 */
