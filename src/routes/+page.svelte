@@ -1,12 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
-
 	let currentSection = 0;
-
-	onMount(() => {
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
-	});
 
 	function handleScroll() {
 		const scrollY = window.scrollY;
@@ -15,6 +8,8 @@
 		currentSection = Math.round(scrollY / sectionHeight);
 	}
 </script>
+
+<svelte:window on:scroll={handleScroll} />
 
 <div class="sections">
 	<section
