@@ -1,30 +1,23 @@
-<script>
-	let currentSection = 0;
+<script lang="ts">
+	import { assets } from '$app/paths';
 
-	function handleScroll() {
-		const scrollY = window.scrollY;
-		const sectionHeight = window.innerHeight;
-		// 現在のスクロール位置に基づいてセクションを決定する
-		currentSection = Math.round(scrollY / sectionHeight);
-	}
+	const iconPath = assets + '/nango_square.png';
 </script>
 
-<svelte:window on:scroll={handleScroll} />
-
-<div class="sections">
-	<section
-		class:active={currentSection === 0}
-		style="transform: translateX({currentSection === 0 ? 0 : -100}%)"
-	>
-		Hello. There's nothing here "yet".
+<div>
+	<section>
+		<img src={iconPath} alt="たけろいどのアイコン" />
+		<h2>たけろいど Takeroid</h2>
+		<h3>フロントエンドエンジニア / Frontend Engineer</h3>
+		<p>
+			たけのこの里とSvelteKitが好きな人です。<br
+			/>日本のとあるISPでWEBアプリケーションエンジニアとして働いています。
+		</p>
 	</section>
-	<section
-		class:active={currentSection === 1}
-		style="transform: translateX({currentSection === 1 ? 0 : -100}%)"
-	>
-		It's really not there!
+	<section>
+		<div class="card"><p>いつでも探しているよどっかに君の姿を</p></div>
+		<div class="card"><p>Twitterをやっているよ</p></div>
 	</section>
-	<!-- 追加のセクションがあればここに -->
 </div>
 
 <footer>
@@ -32,27 +25,38 @@
 </footer>
 
 <style>
-	.sections {
-		height: 200vh; /* セクションの数に応じて調整する */
-		overflow-x: hidden;
+	img {
+		/* imgを丸に切り取る */
+		border-radius: 50%;
+		/* サイズを小さくする */
+		width: 184px;
+		height: auto;
+		/* 画像をズームする */
+		/* 画像の周りに線を引く */
+		border: 1px solid #000;
 	}
-	section {
-		min-height: 100vh;
-		width: 100vw;
-		position: fixed;
-		transition: transform 1s ease-out;
+	/* breakpoint 768pxの設定 */
+	@media (max-width: 768px) {
+		img {
+			width: 128px;
+		}
 	}
-	.active {
-		/* アクティブなセクションのスタイル */
-	}
-	footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 1rem;
-		position: fixed; /* ヘッダーを固定 */
-		bottom: 0; /* 画面の下端に */
-		left: 0; /* 画面の左端に */
-		width: auto; /* フッターの内容に合わせて幅を調整 */
+	.card {
+		/* カードの背景色 */
+		background-color: #fff;
+		/* カードの幅 */
+		width: 100%;
+		/* カードの高さ */
+		height: 100px;
+		/* カードの角丸 */
+		border-radius: 10px;
+		/* カードの影 */
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+		/* カードの中の文字の位置 */
+		text-align: center;
+		/* カードの中の文字の位置 */
+		line-height: 100px;
+		/* カードの中の文字の大きさ */
+		font-size: 20px;
 	}
 </style>
