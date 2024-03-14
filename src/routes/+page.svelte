@@ -3,7 +3,7 @@
 	import Card from '../bin/components/Card.svelte';
 	import ImageCard from '../bin/components/ImageCard.svelte';
 
-	const iconPath = assets + '/nango_square.png';
+	const iconPath = `${assets}/images/nango_square.png`;
 </script>
 
 <div>
@@ -23,7 +23,7 @@
 		<Card>
 			<p>Twitterをやっているよ</p>
 		</Card>
-		<ImageCard src={`${assets}/sample.jpg`} alt="パスタ" />
+		<ImageCard src={`${assets}/images/sample.jpg`} alt="パスタ" />
 	</section>
 </div>
 
