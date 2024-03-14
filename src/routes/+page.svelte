@@ -2,6 +2,7 @@
 	import { assets } from '$app/paths';
 	import Card from '../bin/components/Card.svelte';
 	import ImageCard from '../bin/components/ImageCard.svelte';
+	import LinkCard from '../bin/components/LinkCard.svelte';
 
 	const iconPath = `${assets}/images/nango_square.png`;
 </script>
@@ -27,6 +28,7 @@
 		<ImageCard src={`${assets}/images/i_love_svelte.jpg`} alt="私はSvelteが大好きです" />
 		<ImageCard src={`${assets}/images/distant_everyday_emories.jpeg`} alt="思い出は遠くの日々" />
 		<ImageCard src={`${assets}/images/my_best_memory_on_ff14.png`} alt="一番大事な思い出" />
+		<LinkCard />
 	</section>
 </div>
 
