@@ -9,9 +9,9 @@
 		/* カードの幅 */
 		width: 100%;
 		/* カードの高さ */
-		height: 100px;
+		height: auto;
 		/* カードの角丸 */
-		border-radius: 10px;
+		border-radius: 20px;
 		/* カードの影 */
 		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 		/* カードの中の文字の位置 */

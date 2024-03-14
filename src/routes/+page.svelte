@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
 	import Card from '../bin/components/Card.svelte';
+	import ImageCard from '../bin/components/ImageCard.svelte';
 
 	const iconPath = assets + '/nango_square.png';
 </script>
@@ -22,6 +23,7 @@
 		<Card>
 			<p>Twitterをやっているよ</p>
 		</Card>
+		<ImageCard src={`${assets}/sample.jpg`} alt="パスタ" />
 	</section>
 </div>
 
