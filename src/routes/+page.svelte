@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
+	import Card from '../bin/components/Card.svelte';
 
 	const iconPath = assets + '/nango_square.png';
 </script>
@@ -15,8 +16,12 @@
 		</p>
 	</section>
 	<section>
-		<div class="card"><p>いつでも探しているよどっかに君の姿を</p></div>
-		<div class="card"><p>Twitterをやっているよ</p></div>
+		<Card>
+			<p>いつでも探しているよ。どっかに君の姿を</p>
+		</Card>
+		<Card>
+			<p>Twitterをやっているよ</p>
+		</Card>
 	</section>
 </div>
 
@@ -40,23 +45,5 @@
 		img {
 			width: 128px;
 		}
-	}
-	.card {
-		/* カードの背景色 */
-		background-color: #fff;
-		/* カードの幅 */
-		width: 100%;
-		/* カードの高さ */
-		height: 100px;
-		/* カードの角丸 */
-		border-radius: 10px;
-		/* カードの影 */
-		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-		/* カードの中の文字の位置 */
-		text-align: center;
-		/* カードの中の文字の位置 */
-		line-height: 100px;
-		/* カードの中の文字の大きさ */
-		font-size: 20px;
 	}
 </style>
